@@ -6,6 +6,8 @@ ABAP provides some different function modules or classes to import csv files, bu
 
 * Support for different field separators
 * Support for different field delimiters
+* Support for escaped delimiters used in field values (e.g. `"This ""is a quoted"" value"`)
+* Support for line breaks in delimited field values (e.g. `"This value \n contains a new line"`)
 * Identify the column by header title instead of position
 * Import column value without a priori knowledge of the datatype
 * Transform or convert values during import
@@ -68,7 +70,7 @@ cl_demo_output=>display_json( json ).
 ```
 
 ## Authors
-* [Andreas Ferdinand Kasper](https://github.com/AndreasFerdinand) - [SRB Consulting Team GmbH](https://www.srb.at)
+* [Andreas Ferdinand Kasper](https://github.com/AndreasFerdinand) - initial code base - [SRB Consulting Team GmbH](https://www.srb.at)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
